@@ -15,7 +15,7 @@ interface Props {
 }
 function DisturbuteCard({ data }: Props) {
   return (
-    <div key={data.id} className="flex lg:flex-row flex-col-reverse gap-10">
+    <div key={data.id} className="flex  lg:flex-row flex-col-reverse gap-10">
       <motion.div
         initial={{ opacity: 0, translateY: 100 }}
         whileInView={{ opacity: 1, translateY: 0 }}
@@ -29,7 +29,7 @@ function DisturbuteCard({ data }: Props) {
           {data.btn}
         </button>
       </motion.div>
-      <div className="w-full h-full flex-1 overflow-hidden rounded-lg border-2 border-solid border-main-black ">
+      <div className="w-full shadow-main-black shadow-sm h-full flex-1 overflow-hidden rounded-lg border-2 border-solid border-main-black ">
         <Image
           sizes="(max-width: 479px) 89vw, (max-width: 767px) 94vw, (max-width: 991px) 87vw, 42vw"
           src={data.img}

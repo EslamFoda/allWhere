@@ -11,7 +11,7 @@ const GlobalCoverage = () => {
       <div
         onMouseMove={(e) => {
           const x = (window.innerWidth - e.pageX * -2) / 100;
-          const y = (window.innerHeight - e.pageX * -2) / 100;
+          const y = (window.innerHeight - e.pageY * -2) / 100;
           
           //@ts-ignore
           planeRef.current.style.transform = `translateX(${x}px) translateY(${y}px)`;
@@ -23,7 +23,7 @@ const GlobalCoverage = () => {
         <div className="rounded-full relative">
           <Image
             ref={planeRef}
-            className="absolute top-0 lg:-left-16 md:-left-10 -left-6 z-10"
+            className="absolute lg:-top-20 md:-top-24 -top-32 -left-10 lg:-left-20 md:left-0 z-10"
             src="/paper-plane.webp"
             alt="paper plane img"
             width={200}
@@ -39,7 +39,7 @@ const GlobalCoverage = () => {
             />
             <Image
               ref={arrowRef}
-              className="absolute lg:bottom-4 md:bottom-20 bottom-4 -right-48 lg:-right-48 md:-right-42"
+              className="absolute lg:bottom-20 md:bottom-36 bottom-32 -right-40 md:-right-16 lg:-right-40"
               src="/arrow.png"
               alt="arrow img"
               width={450}
