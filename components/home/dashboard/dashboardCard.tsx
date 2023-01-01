@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import CardTitle from "../../ui/text/cardTitle";
+import CardSubTitle from "../../ui/text/cardSubTitle";
 
 interface itemData {
   title: string;
@@ -31,8 +33,8 @@ function DashboardCard({ item, i }: Props) {
         }}
       ></div>
       <div className="p-8 space-y-2">
-        <h3 className="font-bold text-xl">{item.title}</h3>
-        <p className="leading-loose">{item.desc}</p>
+        <CardTitle text={item.title} />
+        <CardSubTitle text={item.desc} />
       </div>
     </motion.div>
   );

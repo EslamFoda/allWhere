@@ -8,7 +8,7 @@ interface DataProps {
   title: string;
   subTitle: string;
   img: string;
-  btn:string
+  btn: string;
 }
 interface Props {
   data: DataProps;
