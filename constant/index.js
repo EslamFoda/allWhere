@@ -78,3 +78,15 @@ export const dashboardData = [
     img: "https://assets.website-files.com/637be80ebdeb9e966b7a84cd/637be80ebdeb9efc517a8569_Grid%2520Card%2520Image%25204-p-1600.webp",
   },
 ];
+
+export const trustedImgs = [
+  "https://assets.website-files.com/637be80ebdeb9e668f7a84dc/637be80fbdeb9e2c357a866a_Cameo%20svg.svg",
+  "https://assets.website-files.com/637be80ebdeb9e668f7a84dc/637be80fbdeb9e96657a8663_found%201.svg",
+  "https://assets.website-files.com/637be80ebdeb9e668f7a84dc/637be80fbdeb9e9ac37a866b_Verifiable.svg",
+  "https://assets.website-files.com/637be80ebdeb9e668f7a84dc/637be80fbdeb9e3e467a86a8_logo_spark-advisors.svg",
+  "https://assets.website-files.com/637be80ebdeb9e668f7a84dc/637be80fbdeb9e37017a8669_Patreon%20svg.svg",
+  "https://assets.website-files.com/637be80ebdeb9e668f7a84dc/637be80fbdeb9ebd4c7a86a7_logo_skillshare.svg",
+  "https://assets.website-files.com/637be80ebdeb9e668f7a84dc/637be80fbdeb9ef31a7a863c_glossgenius%201.svg",
+  "https://assets.website-files.com/637be80ebdeb9e668f7a84dc/637be80fbdeb9e3f2e7a86a6_logo_olaplex.svg",
+  "https://assets.website-files.com/637be80ebdeb9e668f7a84dc/637be80fbdeb9ea9247a86a5_logo_namely.svg",
+];

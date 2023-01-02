@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import Container from "../../ui/container";
-import CardSubTitle from "../../ui/text/cardSubTitle";
 import CardTitle from "../../ui/text/cardTitle";
 import Paragraph from "../../ui/text/paragraph";
 import Title from "../../ui/text/title";
+import OnboardCards from "./common/onboardCards";
 import { motion } from "framer-motion";
 
 function Onboardings() {
@@ -42,37 +42,49 @@ function Onboardings() {
     <Container className="space-y-4">
       <Title
         text="Onboardings for a distributed world"
-        className="font-bold text-center"
+        className="font-bold   text-center"
       />
       <Paragraph
         text="In a hybrid or remote work environment, onboarding employees with the correct equipment can be difficult to coordinate for both the employer and the employee. We’ve nailed the correct way to make your new hires feel welcomed and ready for work."
         className="mx-auto text-center max-w-4xl"
       />
-      <div className="grid lg:grid-cols-2 pt-20 md:grid-cols-2 grid-cols-1 gap-10">
+      <div className="grid lg:grid-cols-2 py-20 md:grid-cols-2 grid-cols-1 gap-10">
         {onboardData.map((data, i) => {
-          return (
-            <motion.div
-              initial={{ opacity: 0, translateY: 100 }}
-              whileInView={{ opacity: 1, translateY: 0 }}
-              transition={{ duration: 0.4, delay: i * 0.2 }}
-              viewport={{ once: true, amount: 0.1 }}
-              key={data.id}
-              className="flex text-center lg:text-left md:text-left  flex-col lg:flex-row gap-8 bg-main-orange p-4 rounded-xl items-center"
-            >
-              <Image
-                src={data.img}
-                alt={data.title + "img"}
-                width={94}
-                height={94}
-                className="md:self-start self-center lg:self-center"
-              />
-              <div className="space-y-2">
-                <CardTitle text={data.title} />
-                <CardSubTitle text={data.subTitle} />
-              </div>
-            </motion.div>
-          );
+          return <OnboardCards key={data.id} data={data} i={i} />;
         })}
+      </div>
+      <div className="grid lg:grid-cols-2 grid-cols-1 bg-[#f9c54d] border-solid lg:p-16 items-center md:p-10 p-6 border-main-black border-2 rounded-xl gap-10">
+        <motion.div
+          initial={{ opacity: 0, translateY: 100 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
+          className="space-y-8"
+        >
+          <Paragraph text="“allwhere has taken the onboarding time for a new hire from an hour to less than two minutes. From day 1, allwhere ensures that everyone on our team has the equipment they need to be successful.”" />
+          <div>
+            <CardTitle text="Byron Edwards" />
+            <span>Co-Founder, Spark Advisors</span>
+          </div>
+        </motion.div>
+        <div className="relative">
+          <div className="w-full  shadow-main-black shadow-sm h-full flex-1 overflow-hidden rounded-lg border-2 border-solid border-main-black ">
+            <Image
+              sizes="(max-width: 479px) 89vw, (max-width: 767px) 94vw, (max-width: 991px) 87vw, 42vw"
+              src="/women-laptop.webp"
+              alt="women with laptop img"
+              width="1024"
+              height="594"
+            />
+          </div>
+          <Image
+            src="/draw-man.webp"
+            className="absolute -bottom-32 left-0"
+            alt="draw man img"
+            width="172"
+            height="200"
+          />
+        </div>
       </div>
     </Container>
   );

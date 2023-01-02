@@ -53,7 +53,9 @@ function NavBar() {
           <DropDown menu={resources}>
             <span>resources</span>
           </DropDown>
-          <span>about</span>
+          <span className="cursor-pointer" onClick={() => {
+            push("/about");
+          }}>about</span>
         </div>
       </div>
       <button className="bg-[#f9c54d] transition-all drop-shadow-md w-full sm:w-auto md:w-auto lg:w-auto py-2 hover:bg-[#131414] hover:text-white px-4 rounded-full font-bold text-lg">

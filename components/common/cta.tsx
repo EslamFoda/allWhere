@@ -7,8 +7,9 @@ interface Props {
   title: string;
   paragraph: string;
   smallBtn?: boolean;
+  titleClassName?:string
 }
-function Cta({ title, paragraph, smallBtn }: Props) {
+function Cta({ title, paragraph, smallBtn,titleClassName }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0, translateY: 100 }}
@@ -18,7 +19,7 @@ function Cta({ title, paragraph, smallBtn }: Props) {
       className="text-center space-y-4"
     >
       <Title
-        className="lg:!text-7xl text-4xl  max-w-3xl leading-tight mx-auto"
+        className={`lg:!text-7xl text-4xl  max-w-3xl leading-tight mx-auto ${titleClassName}`}
         text={title}
       />
       <Paragraph className="max-w-2xl mx-auto" text={paragraph} />
