@@ -12,3 +12,61 @@
   background-color: #faf7f0;
   color: #131414;
 }
+
+
+.progress {
+  position: sticky;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.progress svg {
+  transform: translateX(-100px) rotate(-90deg);
+}
+
+circle {
+  stroke-dashoffset: 0;
+  stroke-width: 5%;
+  fill: none;
+}
+
+.bg {
+  stroke: black;
+  opacity: 0.2;
+}
+
+.progress .indicator {
+  stroke: red;
+}
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 5px;
+  background: yellow;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: red;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section div {
+  width: 200px;
+  height: 300px;
+  border: 2px dotted blueviolet;
+  position: relative;
+}

@@ -27,7 +27,7 @@ function Values() {
   return (
     <Container className="space-y-8">
       <h1 className="font-bold text-3xl">Our values</h1>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
         {valuesData.map((value, i) => {
           return (
             <motion.div
@@ -35,8 +35,8 @@ function Values() {
               whileInView={{ opacity: 1, translateY: 0 }}
               transition={{ duration: 0.5, delay: i * 0.2 }}
               key={value.id}
-              viewport={{ once: true, amount: 0.2 }}
-              className="border-main-black space-y-6 border-solid border rounded-lg p-10"
+              viewport={{ once: true, amount: 0.1 }}
+              className="border-main-black space-y-6 border-solid border rounded-lg lg:p-10 md:p-10 p-4"
             >
               <CardTitle text={value.title} />
               <CardSubTitle text={value.subTitle} />

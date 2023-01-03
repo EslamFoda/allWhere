@@ -6,7 +6,7 @@ import { trustedImgs } from "../../constant";
 function MarqueeImgs() {
   return (
     <Marquee gradientWidth={25} pauseOnHover>
-      <div className="flex  items-center py-10 first:mr-20 gap-x-20">
+      <div className="flex  items-center lg:py-10 md:py-10 py-5 first:mr-20 gap-x-20">
         {trustedImgs.map((img, i) => {
           return (
             <Image

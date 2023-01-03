@@ -43,7 +43,14 @@ function NavBar() {
           height={27}
         />
         <div className="flex mt-2 font-semibold items-center gap-6 text-sm">
-          <span>how it works</span>
+          <span
+            className="cursor-pointer"
+            onClick={() => {
+              push("/how-remote-first-setups-work");
+            }}
+          >
+            how it works
+          </span>
           <DropDown menu={useCases}>
             <span>use cases </span>
           </DropDown>
@@ -53,9 +60,14 @@ function NavBar() {
           <DropDown menu={resources}>
             <span>resources</span>
           </DropDown>
-          <span className="cursor-pointer" onClick={() => {
-            push("/about");
-          }}>about</span>
+          <span
+            className="cursor-pointer"
+            onClick={() => {
+              push("/about");
+            }}
+          >
+            about
+          </span>
         </div>
       </div>
       <button className="bg-[#f9c54d] transition-all drop-shadow-md w-full sm:w-auto md:w-auto lg:w-auto py-2 hover:bg-[#131414] hover:text-white px-4 rounded-full font-bold text-lg">

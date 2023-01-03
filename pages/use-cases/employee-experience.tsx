@@ -1,5 +1,13 @@
+import Hero from "../../components/use-cases/emploee-exp/hero";
+import PerfectSetup from "../../components/use-cases/emploee-exp/perfectSetup";
+
 const EmployeeExperience = () => {
-  return <>EmployeeExperience</>;
+  return (
+    <>
+      <Hero />
+      <PerfectSetup />
+    </>
+  );
 };
 
 export default EmployeeExperience;

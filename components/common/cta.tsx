@@ -7,16 +7,25 @@ interface Props {
   title: string;
   paragraph: string;
   smallBtn?: boolean;
-  titleClassName?:string
+  titleClassName?: string;
+  btnClassName?: string;
+  containerClassName?: string;
 }
-function Cta({ title, paragraph, smallBtn,titleClassName }: Props) {
+function Cta({
+  title,
+  paragraph,
+  smallBtn,
+  titleClassName,
+  btnClassName,
+  containerClassName,
+}: Props) {
   return (
     <motion.div
       initial={{ opacity: 0, translateY: 100 }}
       whileInView={{ opacity: 1, translateY: 0 }}
       transition={{ duration: 0.5 }}
-      viewport={{ once: true, amount: 0.5 }}
-      className="text-center space-y-4"
+      viewport={{ once: true, amount: 0.1 }}
+      className={`text-center space-y-4 ${containerClassName}`}
     >
       <Title
         className={`lg:!text-7xl text-4xl  max-w-3xl leading-tight mx-auto ${titleClassName}`}
@@ -28,7 +37,9 @@ function Cta({ title, paragraph, smallBtn,titleClassName }: Props) {
           BOOK A DEMO
         </button>
       ) : (
-        <button className="bg-[#f9c54d] transition-all drop-shadow-md w-full sm:w-auto md:w-auto lg:w-auto py-4 hover:bg-[#131414] hover:text-white px-8 rounded-full font-bold text-xl">
+        <button
+          className={`bg-[#f9c54d] transition-all drop-shadow-md w-full sm:w-auto md:w-auto lg:w-auto py-4 hover:bg-[#131414] hover:text-white px-8 rounded-full font-bold text-xl ${btnClassName}`}
+        >
           BOOK A DEMO
         </button>
       )}

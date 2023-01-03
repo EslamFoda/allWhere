@@ -51,7 +51,7 @@ const GlobalCoverage = () => {
           initial={{ opacity: 0, translateY: 100 }}
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.1 }}
           className="space-y-4 lg:text-left text-center"
         >
           <h2 className="lg:text-4xl text-2xl  leading-snug font-bold">

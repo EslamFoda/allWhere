@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import Container from "../../ui/container";
 import CardTitle from "../../ui/text/cardTitle";
 import Paragraph from "../../ui/text/paragraph";
@@ -58,7 +57,7 @@ function Onboardings() {
           initial={{ opacity: 0, translateY: 100 }}
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.1 }}
           className="space-y-8"
         >
           <Paragraph text="“allwhere has taken the onboarding time for a new hire from an hour to less than two minutes. From day 1, allwhere ensures that everyone on our team has the equipment they need to be successful.”" />

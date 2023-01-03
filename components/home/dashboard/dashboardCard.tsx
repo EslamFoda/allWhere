@@ -22,11 +22,11 @@ function DashboardCard({ item, i }: Props) {
       whileInView={{ opacity: 1, translateY: 0 }}
       transition={{ duration: 0.5, delay: i * 0.2 }}
       key={item.id}
-      viewport={{ once: true, amount: 0.2 }}
-      className="border border-[#8fc8cf] rounded-lg overflow-hidden border-solid"
+      viewport={{ once: true, amount: 0.1 }}
+      className="border border-main-blue rounded-lg overflow-hidden border-solid"
     >
       <div
-        className="bg-contain bg-center bg-no-repeat"
+        className="bg-contain bg-center  bg-no-repeat"
         style={{
           backgroundImage: `url(${item.img})`,
           aspectRatio: 228 / 100,
