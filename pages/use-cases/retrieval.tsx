@@ -1,8 +1,15 @@
+import Distributed from "../../components/use-cases/retrieval/distributed";
+import HowItWork from "../../components/use-cases/retrieval/howItWork";
+import Starting from "../../components/use-cases/retrieval/starting";
 
 function Retrieval() {
   return (
-    <div>Retrieval</div>
-  )
+    <>
+      <Starting />
+      <Distributed />
+      <HowItWork />
+    </>
+  );
 }
 
-export default Retrieval
+export default Retrieval;

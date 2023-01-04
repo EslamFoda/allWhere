@@ -2,7 +2,10 @@ import Cta from "../../common/cta";
 
 function Hero() {
   return (
-    <div style={{backgroundImage:"url(/employee-exp.webp)"}} className="bg-main-blue border-main-black border-2 rounded-xl m-8 object-contain bg-no-repeat bg-bottom bg-contain py-28 px-6">
+    <div
+      style={{ backgroundImage: "url(/employee-exp.webp)" }}
+      className="bg-main-blue border-main-black border-2 rounded-xl m-8 object-contain bg-no-repeat bg-bottom bg-contain lg:py-28  md:py-28 py-10 lg:px-6 md:px-6 px-2"
+    >
       <Cta
         containerClassName="space-y-10"
         smallBtn

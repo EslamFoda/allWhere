@@ -6,6 +6,7 @@ import Paragraph from "../ui/text/paragraph";
 interface Props {
   title: string;
   paragraph: string;
+  paragraphClassName?: String;
   smallBtn?: boolean;
   titleClassName?: string;
   btnClassName?: string;
@@ -18,6 +19,7 @@ function Cta({
   titleClassName,
   btnClassName,
   containerClassName,
+  paragraphClassName,
 }: Props) {
   return (
     <motion.div
@@ -31,7 +33,7 @@ function Cta({
         className={`lg:!text-7xl text-4xl  max-w-3xl leading-tight mx-auto ${titleClassName}`}
         text={title}
       />
-      <Paragraph className="max-w-2xl mx-auto" text={paragraph} />
+      <Paragraph className={`max-w-2xl mx-auto ${paragraphClassName}`} text={paragraph} />
       {smallBtn ? (
         <button className="bg-[#f9c54d] transition-all drop-shadow-md w-full sm:w-auto md:w-auto lg:w-auto py-2 hover:bg-[#131414] hover:text-white px-4 rounded-full font-bold text-lg">
           BOOK A DEMO

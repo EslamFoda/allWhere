@@ -63,7 +63,7 @@ export const dashboardData = [
     id: 2,
     title: "End-to-end logistics",
     desc: "We handle all communication with your employees and shipping partners, so you can ensure that your device is getting to the right person, in the right place, at the right time.",
-    img: "https://assets.website-files.com/637be80ebdeb9e966b7a84cd/637be80ebdeb9ec5c17a8567_Grid%20Card%20Image%201.webp",
+    img: "https://assets.website-files.com/637be80ebdeb9e966b7a84cd/637be80ebdeb9e52f67a8568_home__end-to-end-logistics__illustration.webp",
   },
   {
     id: 3,

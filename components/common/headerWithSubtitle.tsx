@@ -6,8 +6,9 @@ interface Props {
   title: string;
   subTitle: string;
   animate?: boolean;
+  paragraphClass?:string
 }
-function HeaderWithSubtitle({ title, subTitle, animate }: Props) {
+function HeaderWithSubtitle({ title, subTitle, animate,paragraphClass }: Props) {
   return (
     <>
       {animate ? (
@@ -19,12 +20,12 @@ function HeaderWithSubtitle({ title, subTitle, animate }: Props) {
           className="text-center mb-20"
         >
           <Title text={title} className="font-semibold" />
-          <Paragraph text={subTitle} className="!text-2xl" />
+          <Paragraph text={subTitle} className={`${paragraphClass}`} />
         </motion.div>
       ) : (
         <div className="text-center mb-20">
           <Title text={title} className="font-semibold" />
-          <Paragraph text={subTitle} className="!text-2xl" />
+          <Paragraph text={subTitle}  className={`${paragraphClass}`}/>
         </div>
       )}
     </>
