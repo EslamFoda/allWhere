@@ -1,6 +1,6 @@
 import FullService from "../components/howItWorks/fullService";
 import Hero from "../components/howItWorks/hero";
-import Success from "../components/howItWorks/success";
+import Success from "../components/common/success";
 import WorksForYou from "../components/howItWorks/worksForYou";
 
 function HowRemoteFirstSetupsWork() {
@@ -9,7 +9,12 @@ function HowRemoteFirstSetupsWork() {
       <Hero />
       <WorksForYou />
       <FullService />
-      <Success />
+      <Success
+        title="allwhere makes setting your team up for success easy"
+        subTilte="Ready to get started?"
+        btnText="BOOK A DEMO"
+        img="/success.webp"
+      />
     </>
   );
 }

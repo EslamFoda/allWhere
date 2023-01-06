@@ -4,7 +4,8 @@ import React from "react";
 import DropDown from "../../ui/dropdown";
 
 function NavBar() {
-  const { push } = useRouter();
+  const { push, route } = useRouter();
+  const isRouteInTeamPage = route.includes("teams") || route.includes("guides");
   const useCases = [
     {
       title: "Onboarding & Lifecycle Management",
@@ -19,18 +20,33 @@ function NavBar() {
     { title: "Offboardings and Retrieval", id: 3, url: "/use-cases/retrieval" },
   ];
   const teams = [
-    { title: "HR Teams", id: 1, url: "/use-cases/hr" },
-    { title: "IT Teams", id: 2, url: "/use-cases/it" },
+    { title: "HR Teams", id: 1, url: "/teams/hr-remote-work" },
+    { title: "IT Teams", id: 2, url: "/teams/it-remote-work" },
   ];
 
   const resources = [
-    { title: "Seamless Offboarding", id: 1, url: "/use-cases/offboarding" },
-    { title: "Remote Onboarding", id: 2, url: "/use-cases/onboarding" },
-    { title: "Lifecycle Mangement", id: 3, url: "/use-cases/mangement" },
-    { title: "Blogs and Guides", id: 4, url: "/use-cases/guides" },
+    {
+      title: "Seamless Offboarding",
+      id: 1,
+      url: "/guides/seamless-offboarding",
+    },
+    {
+      title: "Remote Onboarding",
+      id: 2,
+      url: "/guides/remote-employee-onboarding",
+    },
+    {
+      title: "Lifecycle Mangement",
+      id: 3,
+      url: "/guides/lifecycle-management",
+    },
   ];
   return (
-    <nav className="flex items-center p-8 justify-between">
+    <nav
+      className={`${
+        isRouteInTeamPage ? "bg-main-blue" : ""
+      } flex items-center p-8 justify-between`}
+    >
       <div className="flex items-center gap-16">
         <Image
           onClick={() => {

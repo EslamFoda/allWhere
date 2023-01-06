@@ -15,9 +15,9 @@ function HeroCta({ title, paragraph, btnText,containerClassName }: Props) {
       <Title className="font-bold" animate text={title} />
       <Paragraph animate text={paragraph} />
       <motion.button
-        initial={{ opacity: 0, translateY: 80 }}
+        initial={{ opacity: 0, translateY: 90 }}
         animate={{ opacity: 1, translateY: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.6 }}
         className="bg-[#f9c54d] transition-all drop-shadow-md w-full sm:w-auto md:w-auto lg:w-auto py-4 hover:bg-[#131414] hover:text-white px-8 rounded-full font-bold text-xl"
       >
         {btnText}

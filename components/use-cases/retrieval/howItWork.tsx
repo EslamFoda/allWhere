@@ -59,6 +59,11 @@ function HowItWork() {
           );
         })}
       </div>
+      <div className="flex items-center justify-center py-5">
+      <button className="bg-[#f9c54d]   transition-all mt-6 drop-shadow-md  py-2 hover:bg-[#131414] hover:text-white px-6 rounded-full font-bold text-lg">
+          START DEVICE RETURN
+        </button>
+      </div>
     </Container>
   );
 }
