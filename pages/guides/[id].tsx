@@ -3,7 +3,7 @@ import Success from "../../components/common/success";
 import GuideHero from "../../components/guides/hero";
 import LearnHow from "../../components/guides/learnHow";
 
-function guide() {
+function Guide() {
   const {
     query: { id },
   } = useRouter();
@@ -140,4 +140,4 @@ function guide() {
   );
 }
 
-export default guide;
+export default Guide;
