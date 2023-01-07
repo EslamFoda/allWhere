@@ -38,7 +38,7 @@ function Distributed() {
       />
       <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8">
         {dashboardData.map((item, i) => {
-          return <DashboardCard item={item} i={i} />;
+          return <DashboardCard key={i} item={item} i={i} />;
         })}
       </div>
     </Container>

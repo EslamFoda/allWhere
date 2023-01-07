@@ -9,7 +9,7 @@ interface Props {
 }
 
 const DropDown = ({ children, menu }: Props) => {
-  const { pathname } = useRouter();
+  const { asPath } = useRouter();
   return (
     <div className="">
       <Menu as="div" className="relative inline-block text-left">
@@ -46,7 +46,7 @@ const DropDown = ({ children, menu }: Props) => {
                           <Link
                             href={item.url}
                             className={`${
-                              active || pathname === item.url
+                              active || asPath === item.url
                                 ? " text-main-black"
                                 : "text-gray-600"
                             } group flex w-full items-center rounded-md px-2 py-2 text-xs font-medium`}

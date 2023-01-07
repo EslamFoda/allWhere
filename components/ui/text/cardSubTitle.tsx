@@ -4,7 +4,7 @@ interface Props {
   className?: string;
 }
 function CardSubTitle({ text, className }: Props) {
-  return <p className={`text-sm leading-loose ${className}`}>{text}</p>;
+  return <p className={`text-sm  leading-loose ${className}`}>{text}</p>;
 }
 
 export default CardSubTitle;

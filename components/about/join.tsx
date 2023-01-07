@@ -14,6 +14,7 @@ function Join() {
         subTitle="Interested in learning more? We’d love for you to join us."
       />
       <motion.div
+        id="careers"
         initial={{ opacity: 0, translateY: 100 }}
         whileInView={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 0.5 }}

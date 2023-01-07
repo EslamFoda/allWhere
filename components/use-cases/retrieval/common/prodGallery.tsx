@@ -128,7 +128,7 @@ export const Pause = () => {
         rx="1"
         fill="white"
         stroke="#131414"
-        stroke-width="2"
+        strokeWidth="2"
       ></rect>
       <rect
         x="8"
@@ -138,7 +138,7 @@ export const Pause = () => {
         rx="1"
         fill="white"
         stroke="#131414"
-        stroke-width="2"
+        strokeWidth="2"
       ></rect>
     </svg>
   );
@@ -157,7 +157,7 @@ export const Play = () => {
         d="M11.9333 9.2L2.6 2.2C1.94076 1.70557 1 2.17595 1 3V17C1 17.824 1.94076 18.2944 2.6 17.8L11.9333 10.8C12.4667 10.4 12.4667 9.6 11.9333 9.2Z"
         fill="white"
         stroke="#131414"
-        stroke-width="2"
+        strokeWidth="2"
       ></path>
     </svg>
   );

@@ -16,7 +16,7 @@ function WorksForYou() {
       </div>
       <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8">
         {worksForData.map((item, i) => {
-          return <DashboardCard item={item} i={i} />;
+          return <DashboardCard key={i} item={item} i={i} />;
         })}
       </div>
     </Container>
