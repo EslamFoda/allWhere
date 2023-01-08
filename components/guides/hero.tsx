@@ -44,9 +44,9 @@ function GuideHero({ hero }: Props) {
                 alt="cover img"
               />
             </div>
-            <div className="border-2 p-10 drop-shadow-xl  bg-white rounded-xl  border-main-black border-solid space-y-6">
-              <h1 className="text-2xl font-bold">Get your free guide</h1>
-              <div className="grid gap-4 grid-cols-2">
+            <div className="border-2 lg:p-10 md:p-10 p-4 drop-shadow-xl  bg-white rounded-xl  border-main-black border-solid space-y-6">
+              <h1 className="lg:text-2xl md:text-2xl text-base font-bold">Get your free guide</h1>
+              <div className="grid gap-4 lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
                 <div>
                   <Input label="First name*" placeholder="First name" />
                 </div>

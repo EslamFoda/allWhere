@@ -13,7 +13,7 @@ interface Props {
 
 const Success = ({ title, subTilte, btnText, img, titleClassName }: Props) => {
   return (
-    <div className="relative">
+    <div className="relative overflow-x-hidden">
       <div className="absolute left-auto translate-x-[60%] translate-y-[-10%] top-2/4 right-0 bottom-0">
         <Image src="/red-arrow.png" alt="arrow img" height={646} width={455} />
       </div>
@@ -43,7 +43,7 @@ const Success = ({ title, subTilte, btnText, img, titleClassName }: Props) => {
               initial={{ opacity: 0, translateY: 80 }}
               animate={{ opacity: 1, translateY: 0 }}
               transition={{ duration: 0.5 }}
-              className="bg-[#f9c54d] transition-all drop-shadow-md w-full sm:w-auto md:w-auto lg:w-auto py-4 hover:bg-[#131414] hover:text-white px-8 rounded-full font-bold text-xl"
+              className="bg-[#f9c54d] block transition-all drop-shadow-md w-full sm:w-auto md:w-auto lg:w-auto py-2 hover:bg-[#131414] hover:text-white px-8 rounded-full font-bold text-lg"
             >
               {btnText}
             </motion.button>

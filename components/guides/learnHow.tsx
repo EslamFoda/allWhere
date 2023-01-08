@@ -20,7 +20,7 @@ function LearnHow({ how }: Props) {
     <Container>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-10 gap-28">
         <div className="space-y-6">
-          <CardTitle className="text-3xl" text={how.title} />
+          <CardTitle className="lg:text-3xl md:text-3xl text-xl" text={how.title} />
           <Paragraph text={how.firsDesc} />
           <Paragraph text={how.secDesc} />
         </div>
@@ -31,7 +31,7 @@ function LearnHow({ how }: Props) {
             transition={{ duration: 0.5 }}
             viewport={{ once: true, amount: 0.1 }}
           >
-            <div className="p-8 space-y-8 border-main-black border-solid border-2 rounded-xl">
+            <div className="lg:p-8 md:p-8 p-4 space-y-8 border-main-black border-solid border-2 rounded-xl">
               <CardTitle text="Learn how to" />
               {how?.howData.map((item) => {
                 return (
