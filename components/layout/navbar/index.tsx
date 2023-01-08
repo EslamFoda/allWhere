@@ -87,7 +87,7 @@ function NavBar() {
               className="cursor-pointer"
               onClick={() => {
                 setIsOpen(false);
-                push("/use-cases/onboarding");
+                push("/use-cases/employee-experience");
               }}
             >
               Employee Experience
@@ -96,7 +96,7 @@ function NavBar() {
               className="cursor-pointer"
               onClick={() => {
                 setIsOpen(false);
-                push("/use-cases/onboarding");
+                push("/use-cases/retrieval");
               }}
             >
               Offboarding & Retrievals
